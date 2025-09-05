@@ -1,7 +1,5 @@
 * {
     margin: 0;
-    padding: 0;
-    
 }
 
 .logo {
@@ -17,8 +15,8 @@ header{
     background-color: black;
     height: 100px;
     display: flex;
-    justify-content: space-between; /* título na esquerda, nav na direita */
-    align-items: center; /* centraliza verticalmente */
+    justify-content: space-between; 
+    align-items: center; 
     padding: 0 20px;
 }
 
@@ -42,78 +40,67 @@ header nav a:hover{
     color: red;
 }
 
- div h1 {
+.fundo{
+    background-color: bisque;
+    padding-top: 20px; 
+    padding-bottom: 50px;
+}
+
+main h2 {
     text-align: center;
-    margin-top: 50px;
-    padding-top: 1px; 
-    font-size: 50px;
+    margin-top: 20px;
+    font-size: 40px;
     color: brown;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.fundo{
-    background-color: bisque;
-    padding-top: 20px; /* afasta o título do topo */
-    padding-bottom: 50px;
+.certificados-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px;
+  justify-items: center;  
+  margin-top: 30px;
 }
 
+.certificados {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 25px 20px;
+  text-align: center;
+  width: 250px;
+  height: 200px;
 
-.container{ 
-    margin: 0 auto;
-    margin-bottom: 100px;
-    display: flex;
-    justify-content: center; 
-    align-items: flex-start;
-    gap: 20px; /* Adiciona um espaço entre os quadradinhos */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* empurra o botão para o final */
+  text-align: center;
 }
-.projetoos{
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 15px 4px 12px rgba(0, 0, 0, 0.1);
-    padding: 25px 20px;
-    text-align: center;
-    width: 250px;
-    height: 230px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+img{
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto 15px auto;
 }
-
-.projetoos:hover{
-    transform: translateY(-8px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-.projetoos h2 {
-    font-size: 30px;
-    color: black;
-    margin-bottom: 20px;
-}
-
-.projetoos p {
+.certificados-container h3 {
     font-size: 18px;
     line-height: 1.5;
 }
 
-.projetoos a {
-    display: inline-block;
+.certificados-container a {
     text-decoration: none;
     padding: 10px 20px;
     font-weight: bold;
     color: white;
     background-color: rgb(153, 71, 71);
-    margin-bottom: 15px;
     border-radius: 11px;
+    margin: 0 auto; 
 }
 
-
-
-p {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.certificados:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
-
-
-
-
-
 
 .contato {
     margin: 40px 0;

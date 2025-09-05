@@ -146,14 +146,14 @@ footer{
 
 .boto{
     display: inline-block;
-  margin-top: 10px;
-  padding: 10px 18px;
-  background: gray;
-  color: #fff;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: background 0.3s;
+    margin-top: 10px;
+    padding: 10px 18px;
+    background: gray;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s;
 }
 
 .boto:hover {
