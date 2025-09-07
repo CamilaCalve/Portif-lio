@@ -11,8 +11,9 @@
   color: rgb(184, 71, 71); 
 }
 
-header{
+header {
     background-color: black;
+    height: 100px;
     color: white;
     display: flex;
     align-items: center;
@@ -25,15 +26,7 @@ header nav {
     display: flex;
     gap: 20px;
 }
-
-header > h1{
-    color: white;
-    margin-left: 50px;
-    line-height: 100px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-header nav a{
+header nav a {
     color: white;
     text-decoration: none;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -43,17 +36,6 @@ header nav a:hover{
     color: red;
 }
 
-.menu-checkbox {
-    display: none;
-}
-
-.menu-icon {
-    display: none;
-    font-size: 28px;
-    cursor: pointer;
-    color: white;
-    user-select: none;
-}
 
 .hello {
     background-color: bisque;
@@ -255,22 +237,6 @@ footer{
         width: 100%;           
         max-width: 300px;      
     }
-    .menu-icon {
-        display: block;
-    }
-    nav {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 20px;
-        background-color: black;
-        padding: 10px;
-        border-radius: 5px;
-        width: 150px;
-    }
-    .menu-checkbox:checked + .menu-icon + .nav {
-        display: flex;
-    }
+
 
 }
