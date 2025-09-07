@@ -216,31 +216,54 @@ footer{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* ===== Responsividade ===== */
-@media (max-width: 800px) {
-  header {
-    flex-direction: column;   /* empilha logo + menu */
-    height: auto;             /* ajusta a altura */
-    align-items: center;      /* centraliza tudo */
-    padding: 20px;
-  }
+@media (max-width: 600px) {
+    .hello {
+        flex-direction: column; /* empilha verticalmente no celular */
+        height: auto;           /* altura automática para ajustar ao conteúdo */
+        padding: 20px;         /* mais espaço interno */
+    }
 
-  header h1 {
-    margin: 0;                /* remove espaço da esquerda */
-    line-height: normal; 
-  }
+    .textop, .hello-img {
+        max-width: 100%;       /* ocupa toda a largura disponível */
+        text-align: center;    /* centraliza o texto */
+    }
 
-  header nav {
-    display: flex;
-    flex-direction: column;   /* coloca os links um embaixo do outro */
-    align-items: center;
-    gap: 10px;
-    margin-top: 15px;
-  }
+    .textop h1 {
+        font-size: 30px;       /* tamanho de fonte menor para celular */
+    }
+
+    .textop p {
+        font-size: 16px;       /* tamanho de fonte menor para celular */
+    }
+
+    .caixas {
+        width: 100%;           /* caixas ocupam toda a largura no celular */
+        max-width: 300px;      /* mas não ficam muito largas */
+    }
+    header {
+        flex-direction: column;   /* empilha logo + menu */
+        height: auto;             /* ajusta a altura automaticamente */
+        align-items: center;      /* centraliza logo e links */
+        padding: 20px;
+    }
+
+    header h1 {
+        margin: 0; 
+        line-height: normal; 
+        font-size: 24px;          /* diminui um pouco no celular */
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;   /* links um embaixo do outro */
+        align-items: center;
+        gap: 10px;
+        margin-top: 15px;
+    }
 
   header nav a {
-    display: block;           /* cada link ocupa toda a largura do bloco */
+    display: block;
     padding: 10px 0;
   }
-}
 
+}
