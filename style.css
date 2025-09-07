@@ -13,11 +13,17 @@
 
 header{
     background-color: black;
-    height: 100px;
+    color: white;
     display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-    padding: 0 20px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: relative;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
 }
 
 header > h1{
@@ -28,16 +34,25 @@ header > h1{
 }
 
 header nav a{
-    text-decoration: none;
     color: white;
-    padding: 15px 20px;
-    display: inline-block;
+    text-decoration: none;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 header nav a:hover{
-    background-color: darkgray;
     color: red;
+}
+
+.menu-checkbox {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+    user-select: none;
 }
 
 .hello {
@@ -216,7 +231,7 @@ footer{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
     .hello {
         flex-direction: column; 
         height: auto;          
@@ -239,6 +254,23 @@ footer{
     .caixas {
         width: 100%;           
         max-width: 300px;      
+    }
+    .menu-icon {
+        display: block;
+    }
+    nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: black;
+        padding: 10px;
+        border-radius: 5px;
+        width: 150px;
+    }
+    .menu-checkbox:checked + .menu-icon + .nav {
+        display: flex;
     }
 
 }
