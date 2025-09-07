@@ -3,20 +3,20 @@
 }
 
 .logo {
-  color: white; /* cor padrão do texto */
+  color: white; 
   font-weight: bold;
 }
 
 .destaque {
-  color: rgb(184, 71, 71); /* a cor que você quiser para as últimas duas letras */
+  color: rgb(184, 71, 71); 
 }
 
 header{
     background-color: black;
     height: 100px;
     display: flex;
-    justify-content: space-between; /* título na esquerda, nav na direita */
-    align-items: center; /* centraliza verticalmente */
+    justify-content: space-between; 
+    align-items: center; 
     padding: 0 20px;
 }
 
@@ -39,6 +39,34 @@ header nav a:hover{
     background-color: darkgray;
     color: red;
 }
+
+.fundo{
+    background-color: bisque;
+    padding-top: 20px; 
+    padding-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .contato {
     margin: 40px 0;
     padding: 20px;
