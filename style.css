@@ -216,7 +216,7 @@ footer{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 700px) {
     .hello {
         flex-direction: column; 
         height: auto;          
