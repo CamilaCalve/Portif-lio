@@ -22,10 +22,17 @@ header {
     position: relative;
 }
 
+header h1{
+    color: white;
+    margin-left: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 header nav {
     display: flex;
     gap: 20px;
 }
+
 header nav a {
     color: white;
     text-decoration: none;
@@ -35,7 +42,6 @@ header nav a {
 header nav a:hover{
     color: red;
 }
-
 
 .hello {
     background-color: bisque;

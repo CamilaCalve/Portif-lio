@@ -24,6 +24,12 @@ header {
     position: relative;
 }
 
+header h1{
+    color: white;
+    margin-left: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 header nav {
     display: flex;
     gap: 20px;
