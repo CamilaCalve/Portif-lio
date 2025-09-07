@@ -149,3 +149,9 @@ footer{
     width: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+@media (max-width: 800px) {
+    .certificados-container {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}

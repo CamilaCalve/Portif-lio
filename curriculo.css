@@ -194,4 +194,21 @@ footer{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+@media (max-width: 800px) {
+  .base {
+    flex-direction: column; 
+    align-items: center;    
+  }
+  .titulo {
+    border-right: none; 
+    border-bottom: 2px solid #ccc; 
+    width: 100%; 
+    text-align: center; 
+    padding: 0 0 10px 0; 
+    margin-bottom: 15px; 
+  }
+  .conteudo {
+    padding-left: 0; 
+  }
+}
 
