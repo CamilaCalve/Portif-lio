@@ -216,3 +216,28 @@ footer{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+@media (max-width: 600px) {
+    .hello {
+        flex-direction: column; /* empilha verticalmente no celular */
+        height: auto;           /* altura automática para ajustar ao conteúdo */
+        padding: 20px;         /* mais espaço interno */
+    }
+
+    .textop, .hello-img {
+        max-width: 100%;       /* ocupa toda a largura disponível */
+        text-align: center;    /* centraliza o texto */
+    }
+
+    .textop h1 {
+        font-size: 30px;       /* tamanho de fonte menor para celular */
+    }
+
+    .textop p {
+        font-size: 16px;       /* tamanho de fonte menor para celular */
+    }
+
+    .caixas {
+        width: 100%;           /* caixas ocupam toda a largura no celular */
+        max-width: 300px;      /* mas não ficam muito largas */
+    }
+}
