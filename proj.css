@@ -153,3 +153,10 @@ footer{
     width: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column; 
+    align-items: center;    
+  }
+}
