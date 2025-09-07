@@ -17,8 +17,8 @@ header{
     background-color: black;
     height: 100px;
     display: flex;
-    justify-content: space-between; /* título na esquerda, nav na direita */
-    align-items: center; /* centraliza verticalmente */
+    justify-content: space-between; 
+    align-items: center; 
     padding: 0 20px;
 }
 
@@ -163,6 +163,10 @@ footer{
         width: 80%;             
         max-width: 300px;      
         margin-bottom: 20px;   
+    }
+    .destaque {
+        display: block;        
+        margin-top: 10px;     
     }
 
 }
