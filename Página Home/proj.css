@@ -42,13 +42,14 @@ header nav a:hover{
     color: red;
 }
 
- div h1 {
+div h1 {
     text-align: center;
     margin-top: 50px;
     padding-top: 1px; 
     font-size: 50px;
     color: brown;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .fundo{
@@ -86,11 +87,13 @@ header nav a:hover{
     font-size: 30px;
     color: black;
     margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 .projetoos p {
     font-size: 18px;
     line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .projetoos a {
