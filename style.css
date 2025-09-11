@@ -1,5 +1,7 @@
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
 }
 
 .logo {
@@ -13,7 +15,7 @@
 
 header {
     background-color: black;
-    height: 100px;
+    height: 100px; 
     color: white;
     display: flex;
     align-items: center;
@@ -220,11 +222,33 @@ footer{
 }
 
 @media (max-width: 768px) {
+    header {
+        height: auto; 
+        flex-direction: column; 
+        text-align: center;
+        padding: 10px;
+    }
+    header h1 {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    header nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
     .hello {
         flex-direction: column;
         text-align: center;
     }
     .div01 {
+        width: 90%;
+    }
+    .box {
+        flex-direction: column;
+        align-items: center;
+    }
+    .caixas {
         width: 90%;
     }
 }

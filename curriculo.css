@@ -1,7 +1,8 @@
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
 }
-
 .logo {
     color: white; 
     font-weight: bold;
@@ -13,7 +14,7 @@
 
 header {
     background-color: black;
-    height: 100px;
+    height: 100px; 
     color: white;
     display: flex;
     align-items: center;
@@ -195,16 +196,28 @@ footer{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
 @media (max-width: 768px) {
+    header {
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+    header h1 {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    header nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
     .fundo {
         flex-direction: column;
         height: auto;
-    }
-    .informacao {
         text-align: center;
-    }
-    .pdf {
-        width: 100%;
+        padding: 20px;
     }
     .base {
         flex-direction: column;
