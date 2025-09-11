@@ -1,20 +1,21 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
+
 .logo {
-    color: white; 
+    color: white;
     font-weight: bold;
 }
 
 .destaque {
-    color: rgb(184, 71, 71); 
+    color: rgb(184, 71, 71);
 }
 
 header {
     background-color: black;
-    height: 100px; 
+    height: 100px;
     color: white;
     display: flex;
     align-items: center;
@@ -23,7 +24,7 @@ header {
     position: relative;
 }
 
-header h1{
+header h1 {
     color: white;
     margin-left: 40px;
     font-family: Arial, Helvetica, sans-serif;
@@ -33,15 +34,17 @@ header nav {
     display: flex;
     gap: 20px;
 }
+
 header nav a {
     color: white;
     text-decoration: none;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-header nav a:hover{
+header nav a:hover {
     color: red;
 }
+
 .fundo {
     display: flex;
     justify-content: space-between;
@@ -50,7 +53,6 @@ header nav a:hover{
     height: 250px;
     padding: 20px 40px;
 }
-
 
 .informacao {
     text-align: left;
@@ -70,61 +72,52 @@ header nav a:hover{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.base{
+.conteudo-principal {
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.base {
     display: flex;
-    align-items: stretch;      
+    justify-content: space-between;
+    align-items: stretch;
     max-width: 800px;
     margin: 40px auto;
     gap: 20px;
-}
+    background-color: #f9f9f9;
+    padding: 20px;
+   }
 
-.titulo{
-    width: 180px;  
+.titulo {
+    width: 250px;
     min-width: 150px;
-    padding-right: 15px;
+    padding-right: 20px;
     border-right: 2px solid #ccc;
     text-align: right;
     display: flex;
-    align-items: flex-start;
-    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.titulo h2{
-    font-size: 25px;
-    color: brown;
-    margin: 0;
+.conteudo {
+    padding-left: 20px;
+    width: 100%;
 }
 
-.conteudo{
-    flex: 1; /* garante mesma linha de início */
-    padding-left: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.conteudo ul{
-    margin: 0;                 
-    padding-left: 0;           
-    list-style-position: inside; /*  texto começa no mesmo ponto que h3/p */
-}
-
-.conteudo li{
-    margin: 6px 0;
-    padding-left: 4px;
-}
-
-.conteudo h3{
+.conteudo h3 {
     font-size: 19px;
     color: #333;
     margin: 10px 0 5px;
 }
 
-.conteudo p, li{
+.conteudo p,
+li {
     font-size: 17px;
     line-height: 1.5;
     margin: 0;
 }
 
-.pdf{
+.pdf {
     background: #fff;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -142,7 +135,7 @@ header nav a:hover{
 .pdf a {
     text-decoration: none;
     color: black;
-    text-align: center; 
+    text-align: center;
     padding: 10px;
     font-size: 18px;
 }
@@ -169,7 +162,7 @@ header nav a:hover{
     line-height: 1.5;
 }
 
-.link{
+.link {
     display: inline-block;
     text-decoration: none;
     padding: 10px 20px;
@@ -180,12 +173,12 @@ header nav a:hover{
     border-radius: 11px;
 }
 
-.link a{
+.link a {
     color: white;
     text-decoration: none;
 }
 
-footer{
+footer {
     background-color: black;
     color: white;
     font-size: 20px;
@@ -196,46 +189,57 @@ footer{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
+/* --- REGRAS APENAS PARA CELULAR (media queries) --- */
 @media (max-width: 768px) {
     header {
         height: auto;
         flex-direction: column;
-        text-align: center;
         padding: 10px;
+        text-align: center;
     }
+
     header h1 {
         margin-left: 0;
         margin-bottom: 10px;
     }
-    header nav {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-    }
+
     .fundo {
         flex-direction: column;
         height: auto;
-        text-align: center;
         padding: 20px;
+        text-align: center;
     }
+
+    .informacao h2 {
+        font-size: 28px;
+    }
+
+    .informacao p {
+        font-size: 14px;
+    }
+
+    .pdf {
+        width: 90%;
+    }
+
     .base {
         flex-direction: column;
         align-items: center;
-        gap: 0;
+        margin: 20px auto;
+        gap: 10px;
     }
+
     .titulo {
         width: 100%;
-        min-width: unset;
-        padding-right: 0;
         border-right: none;
-        text-align: center;
         border-bottom: 2px solid #ccc;
-        padding-bottom: 10px;
-        margin-bottom: 15px;
+        padding-right: 0;
+        padding-bottom: 15px;
+        text-align: center;
     }
+
     .conteudo {
         padding-left: 0;
-        text-align: center;
+        text-align: left;
     }
 }

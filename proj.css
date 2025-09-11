@@ -1,21 +1,21 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 .logo {
-    color: white; 
+    color: white;
     font-weight: bold;
 }
 
 .destaque {
-    color: rgb(184, 71, 71); 
+    color: rgb(184, 71, 71);
 }
 
 header {
     background-color: black;
-    height: 100px; 
+    height: 100px;
     color: white;
     display: flex;
     align-items: center;
@@ -24,7 +24,7 @@ header {
     position: relative;
 }
 
-header h1{
+header h1 {
     color: white;
     margin-left: 40px;
     font-family: Arial, Helvetica, sans-serif;
@@ -34,54 +34,59 @@ header nav {
     display: flex;
     gap: 20px;
 }
+
 header nav a {
     color: white;
     text-decoration: none;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-header nav a:hover{
+header nav a:hover {
     color: red;
 }
 
 div h1 {
     text-align: center;
     margin-top: 50px;
-    padding-top: 1px; 
+    padding-top: 1px;
     font-size: 50px;
     color: brown;
     font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.fundo{
+.fundo {
     background-color: bisque;
-    padding-top: 20px; /* afasta o título do topo */
+    padding-top: 20px;
     padding-bottom: 50px;
 }
 
-.container { 
+.container {
     margin: 0 auto;
     margin-bottom: 100px;
     display: flex;
-    flex-flow: row wrap; 
-    justify-content: center; 
-    align-items: flex-start;
-    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    padding: 20px;
 }
 
-.projetoos{
+.projetoos {
     background: #fff;
-    border-radius: 12px;
-    box-shadow: 15px 4px 12px rgba(0, 0, 0, 0.1);
     padding: 25px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 250px;
-    height: 230px;
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.projetoos:hover{
+.projetoos:hover {
     transform: translateY(-8px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
@@ -109,9 +114,11 @@ div h1 {
     margin-bottom: 15px;
     border-radius: 11px;
 }
+
 p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .contato {
     margin: 40px 0;
     padding: 20px;
@@ -130,7 +137,7 @@ p {
     line-height: 1.5;
 }
 
-.link{
+.link {
     display: inline-block;
     text-decoration: none;
     padding: 10px 20px;
@@ -141,12 +148,12 @@ p {
     border-radius: 11px;
 }
 
-.link a{
+.link a {
     color: white;
     text-decoration: none;
 }
 
-footer{
+footer {
     background-color: black;
     color: white;
     font-size: 20px;
@@ -157,25 +164,22 @@ footer{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* --- REGRAS APENAS PARA CELULAR (media queries) --- */
 @media (max-width: 768px) {
     header {
         height: auto;
         flex-direction: column;
-        text-align: center;
         padding: 10px;
+        text-align: center;
     }
+
     header h1 {
         margin-left: 0;
         margin-bottom: 10px;
     }
-    header nav {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-    }
-    .projetoos {
-        width: 90%;
-        height: auto;
+
+    .container {
+        flex-direction: column;
+        align-items: center;
     }
 }
-
