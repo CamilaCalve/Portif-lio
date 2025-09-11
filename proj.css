@@ -66,6 +66,7 @@ div h1 {
     margin: 0 auto;
     margin-bottom: 100px;
     display: flex;
+    flex-flow: row wrap;
     justify-content: center; 
     align-items: flex-start;
     gap: 20px; /* Adiciona um espaço entre os quadradinhos */
@@ -157,4 +158,3 @@ footer{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-  
