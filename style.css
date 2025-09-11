@@ -57,6 +57,7 @@ header nav a:hover{
 
 .textop {
     max-width: 600px;
+    width: 90%; 
     text-align: left;
 }
 .textop h1 {
@@ -88,9 +89,9 @@ header nav a:hover{
 }
 
 .div01 {
-    width: 100%;
-    max-width: 800px;   
-    margin: 40px auto;  
+    width: 90%; /* Use porcentagem para se adaptar melhor */
+    max-width: 800px;
+    margin: 40px auto;
     padding: 20px;
     display: block;
     flex-wrap: wrap;
