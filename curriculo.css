@@ -194,24 +194,4 @@ footer{
     width: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-@media (max-width: 768px) {
-    .base {
-        flex-direction: column;
-        align-items: center; 
-    }
-    
-    .titulo {
-        width: 100%;
-        text-align: center;
-        border-right: none;
-        border-bottom: 2px solid #ccc;
-        padding-bottom: 10px;
-        margin-bottom: 20px;
-    }
-    
-    .conteudo {
-        padding-left: 0;
-    }
-}
-
 
