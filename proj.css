@@ -157,18 +157,4 @@ footer{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-@media (max-width: 768px) {
-  .container {
-        flex-direction: column; 
-        align-items: center;    
-    }
-    .projetoos {
-        width: 80%;             
-        max-width: 300px;      
-        margin-bottom: 20px;   
-    }
-    .destaque {
-        display: table;  
-    }
 
-}

@@ -47,15 +47,28 @@ header nav a:hover{
     background-color: bisque;
     height: 370px;
     width: 100%;
+    flex-flow: row wrap;
     display: flex;
-    justify-content: center; /* centraliza horizontalmente */
-    align-items: center;     /* centraliza verticalmente */
+    justify-content: center; 
+    align-items: center;     
     gap: 30px; /* espaço entre a imagem e o texto */
+}
+
+.hello-img {
+    width: 200px;       
+    height: 200px;
+    border-radius: 50%; 
+    border: 4px solid palevioletred; 
+    overflow: hidden;   /* corta o que passar do círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .textop {
     max-width: 600px;
-    text-align: left;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
 
 .textop h1 {
@@ -70,28 +83,18 @@ header nav a:hover{
     line-height: 1.5;
 }
 
-.hello-img {
-    width: 200px;       
-    height: 200px;
-    border-radius: 50%; 
-    border: 4px solid palevioletred; 
-    overflow: hidden;   /* corta o que passar do círculo */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .foto-perfil {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* preenche todo o círculo sem distorcer */
+    object-fit: cover; 
 }
 
 
 .div01 {
     width: 100%;
     max-width: 800px;   
-    margin: 40px auto;  /* centraliza a caixa na tela, mas o texto fica alinhado à esquerda */
+    margin: 40px auto;  
+    flex-wrap: wrap; 
     padding: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -106,14 +109,14 @@ header nav a:hover{
     font-size: 18px;
     line-height: 1.6;
     text-align: justify; 
+    flex-grow: 1;
 }
-
 
 .box{
     display: flex;
     justify-content: center;
-    gap: 30px; /* espaço entre os cards */
-    flex-wrap: wrap; /* quebra de linha no celular */
+    gap: 30px; 
+    flex-wrap: wrap; 
     margin-top: 40px;
 }
 
@@ -219,30 +222,4 @@ footer{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-@media (max-width: 768px) {
-    .hello {
-        flex-direction: column; 
-        height: auto;          
-        padding: 20px;        
-    }
 
-    .textop, .hello-img {
-        max-width: 100%;      
-        text-align: center;    
-    }
-
-    .textop h1 {
-        font-size: 30px;       
-    }
-
-    .textop p {
-        font-size: 16px;      
-    }
-
-    .caixas {
-        width: 100%;           
-        max-width: 300px;      
-    }
-
-
-}
