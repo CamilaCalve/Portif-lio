@@ -61,16 +61,16 @@ div h1 {
     padding-bottom: 50px;
 }
 
-
-.container{ 
+.container { 
     margin: 0 auto;
     margin-bottom: 100px;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row wrap; 
     justify-content: center; 
     align-items: flex-start;
-    gap: 20px; /* Adiciona um espaço entre os quadradinhos */
+    gap: 20px;
 }
+
 .projetoos{
     background: #fff;
     border-radius: 12px;
@@ -156,5 +156,12 @@ footer{
     position: relative;
     width: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
