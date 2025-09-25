@@ -231,7 +231,8 @@ footer {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* --- REGRAS APENAS PARA CELULAR (media queries) --- */
+
+
 @media (max-width: 768px) {
     header {
         height: auto;
